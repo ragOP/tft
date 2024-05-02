@@ -7,8 +7,8 @@
 }
 
 .leftdiv {
-  width: 382px;
-  height: 257px;
+  width: 392px;
+  height: 317px;
   flex-shrink: 0;
   border-radius: 2px;
   /* opacity: 0.5; */
@@ -17,18 +17,17 @@
 }
 
 .leftdiv .p {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin: -232px 25px 89px 24px;
 
-  position: absolute;
+  position: relative;
   width: 382px;
   height: 257px;
 
-  font-family: "Helvetica Neue LT W1G-55Roman", Helvetica;
-  font-weight: bold;
+  font: 16px "Helvetica Neue LT W1G", Helvetica;
+  font-weight: 400;
   font-style: italic;
   color: #222222;
-  font-size: 15px;
+  /* font-size: 15px; */
   letter-spacing: 0;
   line-height: 1.5rem;
 }
@@ -36,9 +35,8 @@
 .logo {
   width: 40px;
   height: 40px;
-  padding: 4px;
-  margin-top: 20px;
-  margin-left: 10px;
+ 
+ margin: 24px 328px 253px 24px;
 }
 
 .lastlines {

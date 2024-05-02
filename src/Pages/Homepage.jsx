@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <>
       <div>Homepage</div>
-      <Media/>
+      {/* <Media/> */}
       <Footer />
     </>
   );
