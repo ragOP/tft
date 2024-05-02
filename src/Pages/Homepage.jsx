@@ -4,14 +4,15 @@ import Media from "../Component/Media";
 import Diversity from "../Component/Diversity";
 import Carrer from "../Component/Carrer";
 import Navbar from "../Component/Navbar";
+import Hero from "../Component/Hero";
 
 const Homepage = () => {
   return (
     <>
-      <Carrer />
-      {/* <Navbar />
-      {/* <Diversity /> */}{" "}
-      {/* <Media /> */}
+      {/* <Carrer /> */}
+      <Navbar />
+      <Hero />
+      {/* <Diversity /> */} {/* <Media /> */}
       {/* <Footer /> */}
     </>
   );
