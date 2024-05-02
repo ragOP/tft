@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+
+.leftdiv {
+  width: 382px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  /* opacity: 0.5; */
+  background: var(--Nuetral-8, #ebebec);
+  margin-bottom: 10px; /* Add some margin between each div */
+}
+
+.leftdiv .p {
+  margin-left: 10px;
+  margin-top: 10px;
+
+  position: absolute;
+  width: 382px;
+  height: 257px;
+
+  font-family: "Helvetica Neue LT W1G-55Roman", Helvetica;
+  font-weight: bold;
+  font-style: italic;
+  color: #222222;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.lastlines {
+  font-size: 14px;
+  font-family: "Helvetica Neue LT W1G-55Roman", Helvetica;
+  font-weight: 400;
+  color: rgba(84, 88, 90, 1);
+  width: 263px;
+  height: 17px;
+  margin-left: 10px;
+  margin-top: 150px;
+  white-space: nowrap;
+}
