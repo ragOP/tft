@@ -11,7 +11,6 @@ const Homepage = () => {
       <Carrer />
       {/* <Navbar />
       {/* <Diversity /> */}{" "}
-      */}
       {/* <Media /> */}
       {/* <Footer /> */}
     </>
