@@ -1,0 +1,17 @@
+.career {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.text {
+  width: 546px;
+  color: var(--Nuetral-Text, #222);
+  font-family: "Helvetica Neue LT W1G";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 46px; /* 121.053% */
+}
