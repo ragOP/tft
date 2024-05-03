@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="search-icon">
           <img src={search} alt="" />
         </div>
-        <button className="button">Thermofisher</button>
+        <button className="button">Thermofisher.com</button>
       </div>
     </div>
   );

@@ -35,9 +35,11 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hero-right">
-        <img src={right} alt="" />
-        <div className="right">GET IN TOUCH</div>
+      <div className="right-main">
+        <div className="hero-right">
+          <img src={right} alt="" />
+          <div className="right">GET IN TOUCH</div>
+        </div>
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import Diversity from "../Component/Diversity";
 import Carrer from "../Component/Carrer";
 import Navbar from "../Component/Navbar";
 import Hero from "../Component/Hero";
+import Mission from "../Component/Mission";
+import Revenue from "../Component/Revenue";
 
 const Homepage = () => {
   return (
@@ -12,6 +14,8 @@ const Homepage = () => {
       {/* <Carrer /> */}
       <Navbar />
       <Hero />
+      <Mission />
+      <Revenue />
       {/* <Diversity /> */} {/* <Media /> */}
       {/* <Footer /> */}
     </>

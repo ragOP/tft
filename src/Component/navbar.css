@@ -1,9 +1,16 @@
 .navbar {
- display: flex;
- justify-content: space-between;
- align-items: center;
- font: 14px "Helvetica Neue LT W1G", Helvetica;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
+  background-color: #ffffff;
+  z-index: 1000;
+  height: 78px;
 }
 
 .navlogo > img{
