@@ -25,6 +25,25 @@ const Revenue = () => {
           </div>
           <div className="revenue-bottom">
             <img src={right} alt="" />
+            <div className="postion-renvenue">
+              <p className="position-top">Q1 Highlights</p>
+              <div className="position-mid">
+                <div className="first-position">
+                  <p>First quarter revenue was</p>
+                  <h2>
+                    $11.82 <span>billion</span>
+                  </h2>
+                </div>
+                <div className="second-position">
+                  <p>GAAP diluted earnings per share (EPS)</p>
+                  <h2>$5.6</h2>
+                </div>
+                <div className="third-position">
+                  <p>Adjusted EPS</p>
+                  <h2>$7.25</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
