@@ -7,16 +7,19 @@ import Navbar from "../Component/Navbar";
 import Hero from "../Component/Hero";
 import Mission from "../Component/Mission";
 import Revenue from "../Component/Revenue";
+import Newsroom from "../Component/Newsroom";
 
 const Homepage = () => {
   return (
     <>
-      {/* <Carrer /> */}
       <Navbar />
       <Hero />
       <Mission />
       <Revenue />
-      {/* <Diversity /> */} {/* <Media /> */}
+      <Newsroom />
+      {/* <Carrer /> */}
+      {/* <Diversity />
+      <Media /> */}
       {/* <Footer /> */}
     </>
   );
