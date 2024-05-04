@@ -20,8 +20,8 @@ const Homepage = () => {
       <Revenue />
       <Newsroom />
       <Carrer />
-      {/* <Diversity /> */}
-      {/* <Media />  */}
+      <Diversity />
+      <Media />
       {/* <Footer /> */}
     </>
   );
