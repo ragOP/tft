@@ -22,7 +22,7 @@ const Homepage = () => {
       <Carrer />
       <Diversity />
       <Media />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
