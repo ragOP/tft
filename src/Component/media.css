@@ -2,7 +2,7 @@
   height: 658px;
   font: 14px "Helvetica Neue LT W1G", Helvetica;
   font-style: normal;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .container {
   display: flex;
@@ -20,7 +20,6 @@
   margin-bottom: 10px;
   padding: 20px;
 }
-
 .leftdiv .p {
   margin: -232px 25px 89px 24px;
   position: relative;
@@ -34,14 +33,11 @@
   line-height: 1.5rem;
   padding-right: 60px;
 }
-
 .logo {
   width: 40px;
   height: 40px;
- 
- margin: 24px 328px 253px 24px;
+  margin: 24px 328px 253px 24px;
 }
-
 .p > div {
   font-size: 14px;
   font-family: "Helvetica Neue LT W1G-55Roman", Helvetica;

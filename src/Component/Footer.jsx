@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./footer.css";
 import linkedin from "../Assets/Images/linkedin-161-svgrepo-com.svg";
@@ -12,7 +11,6 @@ const Footer = () => {
     <>
       <div class="footer">
         <div class="overlap-group">
-          <div class="rectangle"></div>
           <div class="frame">
             <div class="div">
               <div class="text-wrapper">About Thermo Fisher Scientific</div>
@@ -111,6 +109,7 @@ const Footer = () => {
             <img
               class="logo"
               src="https://c.animaapp.com/4UoIVVjL/img/logo-2.svg"
+              alt=""
             />
             <div class="frame-5">
               <p class="text-wrapper-6">

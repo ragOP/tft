@@ -29,7 +29,10 @@ const Diversity = () => {
           </p>
           <div className="button-mission">
             <img src={dot} alt="" />
-            <p className="button-text" style={{ cursor: "pointer" }}>
+            <p
+              className="button-text"
+              style={{ cursor: "pointer", textTransform: "capitalize" }}
+            >
               Read Full Story
             </p>
           </div>
