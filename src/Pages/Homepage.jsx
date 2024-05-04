@@ -8,6 +8,7 @@ import Hero from "../Component/Hero";
 import Mission from "../Component/Mission";
 import Revenue from "../Component/Revenue";
 import Newsroom from "../Component/Newsroom";
+import Csr from "../Component/Csr";
 
 const Homepage = () => {
   return (
@@ -15,11 +16,12 @@ const Homepage = () => {
       <Navbar />
       <Hero />
       <Mission />
+      <Csr />
       <Revenue />
       <Newsroom />
-      {/* <Carrer /> */}
-      {/* <Diversity />
-      <Media /> */}
+      <Carrer />
+      {/* <Diversity /> */}
+      {/* <Media />  */}
       {/* <Footer /> */}
     </>
   );

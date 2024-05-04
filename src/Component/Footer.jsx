@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./footer.css";
-import linkedin from '../Assets/Images/linkedin-161-svgrepo-com.svg'
-import twitter from '../Assets/Images/pajamas_twitter.svg'
-import youtube from '../Assets/Images/youtube-168-svgrepo-com.svg'
-import facebook from '../Assets/Images/facebook-176-svgrepo-com.svg'
-import insta from '../Assets/Images/instagram-167-svgrepo-com.svg'
+import linkedin from "../Assets/Images/linkedin-161-svgrepo-com.svg";
+import twitter from "../Assets/Images/pajamas_twitter.svg";
+import youtube from "../Assets/Images/youtube-168-svgrepo-com.svg";
+import facebook from "../Assets/Images/facebook-176-svgrepo-com.svg";
+import insta from "../Assets/Images/instagram-167-svgrepo-com.svg";
 
 const Footer = () => {
   return (
@@ -95,9 +95,9 @@ const Footer = () => {
               <div class="frame-2">
                 <div class="text-wrapper-5">Connect</div>
                 <div class="last">
-                  <img class="img" src={linkedin}/>
+                  <img class="img" src={linkedin} />
                   <img class="img" src={twitter} />
-                  <img class="img" src={youtube}/>
+                  <img class="img" src={youtube} />
                   <img class="img" src={facebook} />
                   <img class="img" src={insta} />
                 </div>

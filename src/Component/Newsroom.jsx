@@ -17,7 +17,9 @@ const Newsroom = () => {
             Challenge
           </p>
           <p className="newsroom-date">January 11th, 2023</p>
-          <img src={left} alt="" />
+          <div className="newsroom-img">
+            <img src={left} alt="" />
+          </div>
           <div className="button-mission">
             <img src={dot} alt="" />
             <p
@@ -35,7 +37,9 @@ const Newsroom = () => {
             Awardees and Opens Spring 2023 Submissions
           </p>
           <p className="newsroom-date">April 17th, 2023</p>
-          <img src={right} alt="" />
+          <div className="newsroom-img">
+            <img src={right} alt="" />
+          </div>
           <div className="button-mission">
             <img src={dot} alt="" />
             <p
