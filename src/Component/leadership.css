@@ -52,5 +52,30 @@
  margin-top: 50px;
  cursor: pointer;
 }
+.bottom-title{
+ font: 34px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 48px;
+ text-align: left;
+ color: #262262;
+ padding: 0 70px;
+ margin-top: 40px;
+}
+.bottom-title > span {
+ font: 34px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 48px;
+ text-align: left;
+ color: #262262;
+}
+.leadership-images{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ flex-wrap: wrap;
+ gap: 30px;
+ margin-top: 40px;
+}
 
 

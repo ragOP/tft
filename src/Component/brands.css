@@ -1,3 +1,9 @@
+.brands{
+ height: 1548.5px;
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-style: normal;
+ margin-top: 1050px;
+}
 .brand-banner{
  display: flex;
  align-items: center;

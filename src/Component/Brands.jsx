@@ -14,7 +14,7 @@ import logo from "../Assets/Images/Group.svg";
 
 const Brands = () => {
   return (
-    <div>
+    <div className="brands">
       <div className="brands-title">OUR BRANDS</div>
       <div className="brand-banner">
         <div className="banner-left">
