@@ -4,6 +4,7 @@ import Navbar from "../Component/Navbar";
 import MissionAbout from "../Component/MissionAbout";
 import Diversity from "../Component/Diversity";
 import Leadership from "../Component/Leadership";
+import Brands from "../Component/Brands";
 const About = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const About = () => {
         sliderr={false}
       />
       <Leadership />
+      <Brands />
       <Footer />
     </>
   );

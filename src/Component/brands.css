@@ -1,0 +1,56 @@
+.brand-banner{
+ display: flex;
+ align-items: center;
+ margin-top: 40px;
+}
+.brands-title {
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+  line-height: 22px;
+  font-weight: 700;
+  color: #00677F;
+ padding: 0px 100px;
+}
+.banner-left {
+ position: relative;
+ z-index: 1;
+}
+.banner-left > img {
+ width: 100%;
+}
+.banner-right{
+ position: relative;
+ flex: 1;
+ margin-left: -70px;
+}
+.banner-right > img {
+ width: 100%;
+ height: 216px;
+}
+.banner-logos {
+ display: flex;
+ align-items: center;
+ width: 100%;
+ gap: 30px;
+ flex-wrap: wrap;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ padding-left: 70px;
+}
+.banner-right-text{
+ position: absolute;
+ top: 0;
+ padding: 40px 80px;
+ font: 20px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 30px;
+ text-align: left;
+ color: #fff;
+}
+.banner-left-img{
+ position: absolute;
+ top: 0;
+ left: 0;
+ margin-top: 70px;
+ width: 188.52px;
+height: 40.8px;
+}
