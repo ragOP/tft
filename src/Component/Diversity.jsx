@@ -7,10 +7,10 @@ import third from "../Assets/Images/Rectangle 19924.svg";
 import dot from "../Assets/Images/redsmall.svg";
 import slider from "../Assets/Images/Group 162.svg";
 
-const Diversity = () => {
+const Diversity = ({ title, desc, sliderr, heading, hedingSpan }) => {
   return (
     <div className="containermain">
-      <p className="title">Diversity & inclusion</p>
+      <p className="title">{title}</p>
       <div className="diversity-main">
         <div className="diversity-img">
           <img src={main} alt="" />
@@ -20,13 +20,9 @@ const Diversity = () => {
         </div>
         <div className="diversity-text">
           <p className="diversity-title">
-            Our work is a <span>story of purpose</span>
+            {heading} <span>{hedingSpan}</span>
           </p>
-          <p className="diversity-desc">
-            Our commitment to fostering a culture that values diversity and
-            inclusion (D&I) considers gender and ethnicity diversity as well as
-            diversity of backgrounds, experiences and viewpoints.
-          </p>
+          <p className="diversity-desc">{desc}</p>
           <div className="button-mission">
             <img src={dot} alt="" />
             <p
@@ -36,7 +32,7 @@ const Diversity = () => {
               Read Full Story
             </p>
           </div>
-          <img className="img-slider" src={slider} alt="" />
+          {sliderr && <img className="img-slider" src={slider} alt="" />}
         </div>
       </div>
     </div>

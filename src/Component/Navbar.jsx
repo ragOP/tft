@@ -2,21 +2,34 @@ import React from "react";
 import "./navbar.css";
 import logo from "../Assets/Images/logo.png";
 import search from "../Assets/Images/Search.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="navlogo">
-        <img src={logo} alt="" />
-      </div>
+      <Link to="/">
+        <div className="navlogo">
+          <img src={logo} alt="" />
+        </div>
+      </Link>
       <div className="menulinks">
         <div className="menu">
           <ul>
-            <li>ABOUT</li>
-            <li>CORPORATE SOCIAL RESPONSIBILITY</li>
-            <li>INVESTOR</li>
-            <li>NEWSROOM</li>
-            <li>CAREER</li>
+            <Link to="/about">
+              <li>ABOUT</li>
+            </Link>
+            <Link to="/csr">
+              <li>CORPORATE SOCIAL RESPONSIBILITY</li>
+            </Link>
+            <Link to="/investor">
+              <li>INVESTOR</li>
+            </Link>
+            <Link to="/newsroom">
+              <li>NEWSROOM</li>
+            </Link>
+            <Link to="/career">
+              <li>CAREER</li>
+            </Link>
           </ul>
         </div>
         <div className="search-icon">
