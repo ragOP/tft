@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Component/Footer";
 import Media from "../Component/Media";
 import Diversity from "../Component/Diversity";
@@ -9,11 +9,19 @@ import Mission from "../Component/Mission";
 import Revenue from "../Component/Revenue";
 import Newsroom from "../Component/Newsroom";
 import Csr from "../Component/Csr";
+import Dropdown from "../Component/Dropdown";
 
 const Homepage = () => {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar toggleDropdown={toggleDropdown} />
+      {dropdownVisible && <Dropdown />}
       <Hero />
       <Mission />
       <Csr />

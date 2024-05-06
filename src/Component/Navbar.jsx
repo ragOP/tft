@@ -4,10 +4,10 @@ import logo from "../Assets/Images/logo.png";
 import search from "../Assets/Images/Search.png";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ toggleDropdown }) => {
   return (
     <div className="navbar">
-      <Link to="/">
+      <Link to="/" onClick={toggleDropdown}>
         <div className="navlogo">
           <img src={logo} alt="" />
         </div>
@@ -15,19 +15,19 @@ const Navbar = () => {
       <div className="menulinks">
         <div className="menu">
           <ul>
-            <Link to="/about">
+            <Link onClick={toggleDropdown}>
               <li>ABOUT</li>
             </Link>
-            <Link to="/csr">
+            <Link to="/csr" onClick={toggleDropdown}>
               <li>CORPORATE SOCIAL RESPONSIBILITY</li>
             </Link>
-            <Link to="/investor">
+            <Link to="/investor" onClick={toggleDropdown}>
               <li>INVESTOR</li>
             </Link>
-            <Link to="/newsroom">
+            <Link to="/newsroom" onClick={toggleDropdown}>
               <li>NEWSROOM</li>
             </Link>
-            <Link to="/career">
+            <Link to="/career" onClick={toggleDropdown}>
               <li>CAREER</li>
             </Link>
           </ul>
