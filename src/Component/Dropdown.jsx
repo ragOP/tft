@@ -67,7 +67,7 @@ const Dropdown = () => {
             <p className="heder-drop">Our Company</p>
           </div>
           {companyVisible && (
-            <div className="submenu" style={{ top: "50px" }}>
+            <div className="submenu animated">
               <p>Content 1</p>
             </div>
           )}
@@ -78,7 +78,7 @@ const Dropdown = () => {
             <p className="heder-drop">Our Stories</p>
           </div>
           {storiesVisible && (
-            <div className="submenu" style={{ top: "50px" }}>
+            <div className="submenu animated">
               <p>Content 2</p>
             </div>
           )}
@@ -89,7 +89,7 @@ const Dropdown = () => {
             <p className="heder-drop">Information Security</p>
           </div>
           {securityVisible && (
-            <div className="submenu" style={{ top: "50px" }}>
+            <div className="submenu animated">
               <p>Content 3</p>
             </div>
           )}
@@ -100,7 +100,7 @@ const Dropdown = () => {
             <p className="heder-drop">Supplier Resources</p>
           </div>
           {supplierVisible && (
-            <div className="submenu" style={{ top: "50px" }}>
+            <div className="submenu animated">
               <p>Content 4</p>
             </div>
           )}

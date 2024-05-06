@@ -77,7 +77,32 @@
 }
 .main-dropdown{
  display: flex;
- align-items: center;
+ align-items: start;
  justify-content: start;
  flex-direction: column;
 }
+.submenu{
+ margin-left: 43px;
+ padding-top: 10px;
+}
+.submenu > p {
+ color: black;
+ opacity: 60%;
+ font: 18px "Helvetica Neue LT W1G", Helvetica;
+}
+@keyframes slideInDown {
+ from {
+   transform: translateY(-100%);
+   opacity: 0;
+ }
+ to {
+   transform: translateY(0);
+   opacity: 1;
+ }
+}
+
+.animated {
+ animation-name: slideInDown;
+ animation-duration: 0.8s;
+}
+
