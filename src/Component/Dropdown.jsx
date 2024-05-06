@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./dropdown.css";
 import left from "../Assets/Images/ss.svg";
 import right from "../Assets/Images/Vector (4).svg";
@@ -7,8 +7,41 @@ import down from "../Assets/Images/dropa.svg";
 import icon from "../Assets/Images/icon.png";
 
 const Dropdown = () => {
+  const [companyVisible, setCompanyVisible] = useState(false);
+  const [storiesVisible, setStoriesVisible] = useState(false);
+  const [securityVisible, setSecurityVisible] = useState(false);
+  const [supplierVisible, setSupplierVisible] = useState(false);
+
+  const toggleCompany = () => {
+    setCompanyVisible(!companyVisible);
+    setStoriesVisible(false);
+    setSecurityVisible(false);
+    setSupplierVisible(false);
+  };
+
+  const toggleStories = () => {
+    setStoriesVisible(!storiesVisible);
+    setCompanyVisible(false);
+    setSecurityVisible(false);
+    setSupplierVisible(false);
+  };
+
+  const toggleSecurity = () => {
+    setSecurityVisible(!securityVisible);
+    setCompanyVisible(false);
+    setStoriesVisible(false);
+    setSupplierVisible(false);
+  };
+
+  const toggleSupplier = () => {
+    setSupplierVisible(!supplierVisible);
+    setCompanyVisible(false);
+    setStoriesVisible(false);
+    setSecurityVisible(false);
+  };
+
   return (
-    <div class="dropdown">
+    <div className="dropdown">
       <div className="dropdown-left">
         <div className="dropdown-left-img">
           <img src={left} alt="" />
@@ -28,21 +61,49 @@ const Dropdown = () => {
         </div>
       </div>
       <div className="dropdown-mid">
-        <div className="dropdown-header">
-          <img src={icon} alt="" />
-          <p className="heder-drop">Our Company</p>
+        <div className="main-dropdown">
+          <div className="dropdown-header" onClick={toggleCompany}>
+            <img src={icon} alt="" />
+            <p className="heder-drop">Our Company</p>
+          </div>
+          {companyVisible && (
+            <div className="submenu" style={{ top: "50px" }}>
+              <p>Content 1</p>
+            </div>
+          )}
         </div>
-        <div className="dropdown-header">
-          <img src={icon} alt="" />
-          <p className="heder-drop">Our Stories</p>
+        <div className="main-dropdown">
+          <div className="dropdown-header" onClick={toggleStories}>
+            <img src={icon} alt="" />
+            <p className="heder-drop">Our Stories</p>
+          </div>
+          {storiesVisible && (
+            <div className="submenu" style={{ top: "50px" }}>
+              <p>Content 2</p>
+            </div>
+          )}
         </div>
-        <div className="dropdown-header">
-          <img src={icon} alt="" />
-          <p className="heder-drop">Information Security</p>
+        <div className="main-dropdown">
+          <div className="dropdown-header" onClick={toggleSecurity}>
+            <img src={icon} alt="" />
+            <p className="heder-drop">Information Security</p>
+          </div>
+          {securityVisible && (
+            <div className="submenu" style={{ top: "50px" }}>
+              <p>Content 3</p>
+            </div>
+          )}
         </div>
-        <div className="dropdown-header">
-          <img src={icon} alt="" />
-          <p className="heder-drop">Supplier Resources</p>
+        <div className="main-dropdown">
+          <div className="dropdown-header" onClick={toggleSupplier}>
+            <img src={icon} alt="" />
+            <p className="heder-drop">Supplier Resources</p>
+          </div>
+          {supplierVisible && (
+            <div className="submenu" style={{ top: "50px" }}>
+              <p>Content 4</p>
+            </div>
+          )}
         </div>
       </div>
       <div className="dropdown-right">

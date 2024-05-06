@@ -65,7 +65,7 @@
 }
 .dropdown-header{
  display: flex;
- align-items: center;
+ align-items: start;
  gap: 10px;
  cursor: pointer;
 }
@@ -74,4 +74,10 @@
  font-weight: 400;
  line-height: 30px;
  text-align: center;
+}
+.main-dropdown{
+ display: flex;
+ align-items: center;
+ justify-content: start;
+ flex-direction: column;
 }
