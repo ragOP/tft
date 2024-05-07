@@ -16,8 +16,13 @@ const Homepage = () => {
   const [currentMenu, setCurrentMenu] = useState(null);
 
   const toggleDropdown = (menu) => {
-    setCurrentMenu(menu);
-    setDropdownVisible(!dropdownVisible);
+    if (menu === currentMenu) {
+      setDropdownVisible(false);
+      setCurrentMenu(null);
+    } else {
+      setCurrentMenu(menu);
+      setDropdownVisible(true);
+    }
   };
 
   const MenuData = [

@@ -11,7 +11,7 @@ const Dropdown = ({ menus }) => {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const toggleMenu = (menu) => {
-    setActiveMenu(menu);
+    setActiveMenu(activeMenu === menu ? null : menu);
   };
 
   return (
