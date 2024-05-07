@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./dropdown.css";
 import left from "../Assets/Images/ss.svg";
 import right from "../Assets/Images/Vector (4).svg";
@@ -48,7 +49,9 @@ const Dropdown = ({ menus }) => {
             </div>
             {activeMenu === menu.title && (
               <div className="submenu animated">
-                <p>{menu.content}</p>
+                <Link to={menu.link}>
+                  <p>{menu.content}</p>
+                </Link>
               </div>
             )}
           </div>

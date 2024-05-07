@@ -26,26 +26,49 @@ const Homepage = () => {
   };
 
   const MenuData = [
-    { title: "Our Company", content: "Content 1" },
-    { title: "Our Stories", content: "Content 2" },
-    { title: "Information Security", content: "Content 3" },
-    { title: "Supplier Resources", content: "Content 4" },
+    { title: "Our Company", content: "Content 1", link: "/about" },
+    { title: "Our Stories", content: "Content 2", link: "/about" },
+    { title: "Information Security", content: "Content 3", link: "/about" },
+    { title: "Supplier Resources", content: "Content 4", link: "/about" },
   ];
 
   const CsrMenuData = [
-    { title: "Corporate Governance", content: "CSR Content 1" },
-    { title: "Ethics & Complianc", content: "CSR Content 2" },
-    // Add more submenu items for CSR menu as needed
+    {
+      title: "Corporate Governance",
+      content: "CSR Content 1",
+      link: "/csr",
+    },
+    {
+      title: "Ethics & Compliance",
+      content: "CSR Content 2",
+      link: "/csr",
+    },
   ];
 
   const InvestorMenuData = [
-    { title: "Investor Menu 1", content: "Investor Content 1" },
-    { title: "Investor Menu 2", content: "Investor Content 2" },
+    {
+      title: "Investor Menu 1",
+      content: "Investor Content 1",
+      link: "/investor",
+    },
+    {
+      title: "Investor Menu 2",
+      content: "Investor Content 2",
+      link: "/investor",
+    },
   ];
 
   const NewsroomMenuData = [
-    { title: "Newsroom Menu 1", content: "Newsroom Content 1" },
-    { title: "Newsroom Menu 2", content: "Newsroom Content 2" },
+    {
+      title: "Newsroom Menu 1",
+      content: "Newsroom Content 1",
+      link: "/newsroom",
+    },
+    {
+      title: "Newsroom Menu 2",
+      content: "Newsroom Content 2",
+      link: "/newsroom",
+    },
   ];
 
   const heroClass = dropdownVisible ? "blur" : "";

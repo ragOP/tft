@@ -85,6 +85,12 @@
  margin-left: 27px;
  padding-top: 10px;
 }
+.submenu > a {
+  text-decoration: none;
+  color: black;
+  opacity: 60%;
+  font: 18px "Helvetica Neue LT W1G", Helvetica;
+}
 .submenu > p {
  color: black;
  opacity: 60%;
