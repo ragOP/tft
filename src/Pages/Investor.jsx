@@ -1,17 +1,8 @@
 import React, { useState } from "react";
-import Footer from "../Component/Footer";
-import Media from "../Component/Media";
-import Diversity from "../Component/Diversity";
-import Carrer from "../Component/Carrer";
 import Navbar from "../Component/Navbar";
-import Hero from "../Component/Hero";
-import Mission from "../Component/Mission";
-import Revenue from "../Component/Revenue";
-import Newsroom from "../Component/Newsroom";
-import Csr from "../Component/Csr";
 import Dropdown from "../Component/Dropdown";
 
-const Homepage = () => {
+const Investor = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [currentMenu, setCurrentMenu] = useState(null);
 
@@ -28,9 +19,8 @@ const Homepage = () => {
   ];
 
   const CsrMenuData = [
-    { title: "Corporate Governance", content: "CSR Content 1" },
-    { title: "Ethics & Complianc", content: "CSR Content 2" },
-    // Add more submenu items for CSR menu as needed
+    { title: "CSR Menu 1", content: "CSR Content 1" },
+    { title: "CSR Menu 2", content: "CSR Content 2" },
   ];
 
   const InvestorMenuData = [
@@ -42,7 +32,6 @@ const Homepage = () => {
     { title: "Newsroom Menu 1", content: "Newsroom Content 1" },
     { title: "Newsroom Menu 2", content: "Newsroom Content 2" },
   ];
-
   return (
     <>
       <Navbar toggleDropdown={toggleDropdown} />
@@ -59,23 +48,9 @@ const Homepage = () => {
           }
         />
       )}
-      <Hero />
-      <Mission />
-      <Csr />
-      <Revenue />
-      <Newsroom />
-      <Carrer />
-      <Diversity
-        title="DIVERSITY & INCLUSION"
-        heading="Our work is a"
-        hedingSpan="story of purpose"
-        desc="Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints."
-        sliderr={true}
-      />
-      <Media />
-      <Footer />
+      <h1>Investor</h1>
     </>
   );
 };
 
-export default Homepage;
+export default Investor;

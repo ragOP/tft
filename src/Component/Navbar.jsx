@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Navbar = ({ toggleDropdown }) => {
   return (
     <div className="navbar">
-      <Link to="/" onClick={toggleDropdown}>
+      <Link to="/">
         <div className="navlogo">
           <img src={logo} alt="" />
         </div>
@@ -15,19 +15,19 @@ const Navbar = ({ toggleDropdown }) => {
       <div className="menulinks">
         <div className="menu">
           <ul>
-            <Link onClick={toggleDropdown}>
+            <Link onClick={() => toggleDropdown("About")}>
               <li>ABOUT</li>
             </Link>
-            <Link to="/csr" onClick={toggleDropdown}>
+            <Link onClick={() => toggleDropdown("CSR")}>
               <li>CORPORATE SOCIAL RESPONSIBILITY</li>
             </Link>
-            <Link to="/investor" onClick={toggleDropdown}>
+            <Link onClick={() => toggleDropdown("Investor")}>
               <li>INVESTOR</li>
             </Link>
-            <Link to="/newsroom" onClick={toggleDropdown}>
+            <Link onClick={() => toggleDropdown("Newsroom")}>
               <li>NEWSROOM</li>
             </Link>
-            <Link to="/career" onClick={toggleDropdown}>
+            <Link onClick={() => toggleDropdown("Career")}>
               <li>CAREER</li>
             </Link>
           </ul>

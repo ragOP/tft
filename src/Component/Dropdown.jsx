@@ -5,39 +5,13 @@ import right from "../Assets/Images/Vector (4).svg";
 import top from "../Assets/Images/dropd.svg";
 import down from "../Assets/Images/dropa.svg";
 import icon from "../Assets/Images/icon.png";
+import activeIcon from "../Assets/Images/minus.svg";
 
-const Dropdown = () => {
-  const [companyVisible, setCompanyVisible] = useState(false);
-  const [storiesVisible, setStoriesVisible] = useState(false);
-  const [securityVisible, setSecurityVisible] = useState(false);
-  const [supplierVisible, setSupplierVisible] = useState(false);
+const Dropdown = ({ menus }) => {
+  const [activeMenu, setActiveMenu] = useState(null);
 
-  const toggleCompany = () => {
-    setCompanyVisible(!companyVisible);
-    setStoriesVisible(false);
-    setSecurityVisible(false);
-    setSupplierVisible(false);
-  };
-
-  const toggleStories = () => {
-    setStoriesVisible(!storiesVisible);
-    setCompanyVisible(false);
-    setSecurityVisible(false);
-    setSupplierVisible(false);
-  };
-
-  const toggleSecurity = () => {
-    setSecurityVisible(!securityVisible);
-    setCompanyVisible(false);
-    setStoriesVisible(false);
-    setSupplierVisible(false);
-  };
-
-  const toggleSupplier = () => {
-    setSupplierVisible(!supplierVisible);
-    setCompanyVisible(false);
-    setStoriesVisible(false);
-    setSecurityVisible(false);
+  const toggleMenu = (menu) => {
+    setActiveMenu(menu);
   };
 
   return (
@@ -61,50 +35,24 @@ const Dropdown = () => {
         </div>
       </div>
       <div className="dropdown-mid">
-        <div className="main-dropdown">
-          <div className="dropdown-header" onClick={toggleCompany}>
-            <img src={icon} alt="" />
-            <p className="heder-drop">Our Company</p>
-          </div>
-          {companyVisible && (
-            <div className="submenu animated">
-              <p>Content 1</p>
+        {menus.map((menu, index) => (
+          <div className="main-dropdown" key={index}>
+            <div
+              className={`dropdown-header ${
+                activeMenu === menu.title ? "active" : ""
+              }`}
+              onClick={() => toggleMenu(menu.title)}
+            >
+              <img src={activeMenu === menu.title ? activeIcon : icon} alt="" />
+              <p className="heder-drop">{menu.title}</p>
             </div>
-          )}
-        </div>
-        <div className="main-dropdown">
-          <div className="dropdown-header" onClick={toggleStories}>
-            <img src={icon} alt="" />
-            <p className="heder-drop">Our Stories</p>
+            {activeMenu === menu.title && (
+              <div className="submenu animated">
+                <p>{menu.content}</p>
+              </div>
+            )}
           </div>
-          {storiesVisible && (
-            <div className="submenu animated">
-              <p>Content 2</p>
-            </div>
-          )}
-        </div>
-        <div className="main-dropdown">
-          <div className="dropdown-header" onClick={toggleSecurity}>
-            <img src={icon} alt="" />
-            <p className="heder-drop">Information Security</p>
-          </div>
-          {securityVisible && (
-            <div className="submenu animated">
-              <p>Content 3</p>
-            </div>
-          )}
-        </div>
-        <div className="main-dropdown">
-          <div className="dropdown-header" onClick={toggleSupplier}>
-            <img src={icon} alt="" />
-            <p className="heder-drop">Supplier Resources</p>
-          </div>
-          {supplierVisible && (
-            <div className="submenu animated">
-              <p>Content 4</p>
-            </div>
-          )}
-        </div>
+        ))}
       </div>
       <div className="dropdown-right">
         <img src={right} alt="" />
