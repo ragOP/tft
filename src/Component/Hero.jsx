@@ -6,9 +6,9 @@ import right from "../Assets/Images/Vector (3).svg";
 import video from "../Assets/Images/vid.mp4";
 import "./hero.css";
 
-const Hero = () => {
+const Hero = ({ className }) => {
   return (
-    <div className="hero">
+    <div className={`hero ${className}`}>
       <div className="video-container">
         <video autoPlay loop muted className="video-background">
           <source src={video} type="video/mp4" />

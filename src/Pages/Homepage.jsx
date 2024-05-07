@@ -43,6 +43,8 @@ const Homepage = () => {
     { title: "Newsroom Menu 2", content: "Newsroom Content 2" },
   ];
 
+  const heroClass = dropdownVisible ? "blur" : "";
+
   return (
     <>
       <Navbar toggleDropdown={toggleDropdown} />
@@ -59,7 +61,7 @@ const Homepage = () => {
           }
         />
       )}
-      <Hero />
+      <Hero className={heroClass} />
       <Mission />
       <Csr />
       <Revenue />
