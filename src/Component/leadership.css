@@ -76,6 +76,61 @@
  flex-wrap: wrap;
  gap: 30px;
  margin-top: 40px;
+ z-index: -10;
 }
+.single-image {
+ width: 280px;
+ height: 347px;
+ margin-top: 80px;
+ position: relative;
+}
+.single-desc {
+ width: 280px;
+ height: 100px;
+ background-color: #00677F;
+ position: absolute;
+ bottom: -30px;
+ padding: 15px 30px;
+ color: #fff;
+ transition: height 0.3s ease;
+ overflow: hidden;
+}
+
+.single-image:hover .single-desc {
+ height: 130px;
+ bottom: -30px; 
+}
+
+.single-image::after {
+ content: '\2192';
+ position: absolute;
+ bottom: -15px;
+ right: 250px;
+ color: white;
+ font-size: 40px;
+ font-weight: 900;
+ opacity: 0;
+ transition: right 0.3s ease, opacity 0.3s ease;;
+}
+.single-image:hover::after {
+ right: 20px;
+ opacity: 1;
+}
+.single-image:hover .single-desc{
+ background-color: #E71316;
+}
+.name{
+ font: 16px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 700;
+ line-height: 24px;
+ text-align: left;
+}
+.designation{
+ font: 14px "Helvetica Neue LT W1G", Helvetica;
+ font-weight: 400;
+ line-height: 22px;
+ text-align: left;
+}
+
 
 

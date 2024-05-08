@@ -1,13 +1,13 @@
 import React from "react";
 import founder from "../Assets/Images/founder.svg";
-import profile1 from "../Assets/Images/Leader (1).svg";
-import profile2 from "../Assets/Images/Leader (2).svg";
-import profile3 from "../Assets/Images/Leader (3).svg";
-import profile4 from "../Assets/Images/Leader (4).svg";
-import profile5 from "../Assets/Images/Leader (5).svg";
-import profile6 from "../Assets/Images/Leader (6).svg";
-import profile7 from "../Assets/Images/Leader (7).svg";
-import profile8 from "../Assets/Images/Leader (8).svg";
+import profile1 from "../Assets/Images/Rectangle 19930.svg";
+import profile2 from "../Assets/Images/Rectangle 19930 (1).svg";
+import profile3 from "../Assets/Images/Rectangle 19930 (2).svg";
+import profile4 from "../Assets/Images/Rectangle 19930 (3).svg";
+import profile5 from "../Assets/Images/Rectangle 19930 (4).svg";
+import profile6 from "../Assets/Images/Rectangle 19930 (5).svg";
+import profile7 from "../Assets/Images/Rectangle 19930 (6).svg";
+import profile8 from "../Assets/Images/Rectangle 19930 (7).svg";
 import "./leadership.css";
 
 const Leadership = () => {
@@ -32,14 +32,78 @@ const Leadership = () => {
         Our <span>leadership team</span>
       </div>
       <div className="leadership-images">
-        <img src={profile1} alt="" />
-        <img src={profile2} alt="" />
-        <img src={profile3} alt="" />
-        <img src={profile4} alt="" />
-        <img src={profile5} alt="" />
-        <img src={profile6} alt="" />
-        <img src={profile7} alt="" />
-        <img src={profile8} alt="" />
+        <div className="single-image">
+          <img src={profile1} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile2} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile3} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile4} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile5} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile6} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile7} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
+        <div className="single-image">
+          <img src={profile8} alt="" />
+          <div className="single-desc">
+            <p className="name">Lisa P. Britt</p>
+            <p className="designation">
+              Senior Vice President & Chief Human Resources Officer
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
