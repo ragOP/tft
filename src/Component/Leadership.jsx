@@ -118,7 +118,7 @@ const Leadership = () => {
             cursor: "pointer",
           }}
         >
-          
+          FULL LEADERSHIP LIST
         </p>
       </div>
     </div>
