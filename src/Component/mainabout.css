@@ -14,6 +14,8 @@
  width: 100%;
  height: 396px;
  position: relative;
+ overflow-x: hidden;
+ overflow-y: hidden;
 }
 
 .main-about-img > img {
@@ -44,7 +46,9 @@
  position: absolute;
  top: 0;
  z-index: 2;
- margin-right: 100px !important;
+}
+.right-main-overlay > img {
+ margin-left: 85.5px;
 }
 .play{
  position: absolute;
