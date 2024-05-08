@@ -34,7 +34,7 @@ const Brands = () => {
       </div>
       <div className="banner-logos">
         <div className="logo-single" data-bgcolor="1">
-          <img src={eight} alt="" />
+          <img src={eight} alt="" style={{ width: "161px", height: "79px" }} />
           <div className="brand-name">
             <p className="brand-description">
               A commitment to analytical precision
@@ -46,7 +46,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="logo-single" data-bgcolor="2">
-          <img src={one} alt="" />
+          <img src={one} alt="" style={{ width: "191px", height: "75px" }} />
           <div className="brand-name">
             <p className="brand-description">The path to genomic discoveries</p>
             <div
@@ -56,7 +56,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="logo-single" data-bgcolor="3">
-          <img src={two} alt="" />
+          <img src={two} alt="" style={{ width: "191px", height: "75px" }} />
           <div className="brand-name">
             <p className="brand-description">Accelerating discovery research</p>
             <div
@@ -66,7 +66,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="logo-single" data-bgcolor="4">
-          <img src={three} alt="" />
+          <img src={three} alt="" style={{ width: "231px", height: "95px" }} />
           <div className="brand-name">
             <p className="brand-description">
               The scientific marketplace for choice and convenience
@@ -78,7 +78,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="logo-single" data-bgcolor="5">
-          <img src={four} alt="" />
+          <img src={four} alt="" style={{ width: "191px", height: "75px" }} />
           <div className="brand-name">
             <p className="brand-description">
               The laboratory service and support solution
@@ -90,7 +90,7 @@ const Brands = () => {
           </div>
         </div>
         <div className="logo-single" data-bgcolor="6">
-          <img src={five} alt="" />
+          <img src={five} alt="" style={{ width: "191px", height: "75px" }} />
           <div className="brand-name">
             <p className="brand-description">
               End-to-end pharma services solutions

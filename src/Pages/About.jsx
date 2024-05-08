@@ -6,6 +6,7 @@ import Diversity from "../Component/Diversity";
 import Leadership from "../Component/Leadership";
 import Brands from "../Component/Brands";
 import Dropdown from "../Component/Dropdown";
+import MainAbout from "../Component/MainAbout";
 
 const About = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -82,6 +83,7 @@ const About = () => {
           }
         />
       )}
+      <MainAbout />
       <MissionAbout />
       <Diversity
         title="Our Stories"
