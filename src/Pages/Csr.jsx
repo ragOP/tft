@@ -7,6 +7,7 @@ import Highlights from "../Component/Highlights";
 import Diversity from "../Component/Diversity";
 import Footer from "../Component/Footer";
 import Framework from "../Component/Framework";
+import Eithics from "../Component/Eithics";
 
 const Csr = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -95,6 +96,7 @@ const Csr = () => {
         sliderr={true}
         background="#fff"
       />
+      <Eithics />
       <Footer />
     </>
   );
