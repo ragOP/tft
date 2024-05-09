@@ -7,9 +7,16 @@ import third from "../Assets/Images/Rectangle 19924.svg";
 import dot from "../Assets/Images/redsmall.svg";
 import slider from "../Assets/Images/Group 162.svg";
 
-const Diversity = ({ title, desc, sliderr, heading, hedingSpan }) => {
+const Diversity = ({
+  title,
+  desc,
+  sliderr,
+  heading,
+  hedingSpan,
+  background,
+}) => {
   return (
-    <div className="containermain">
+    <div className="containermain" style={{ background: background }}>
       <p className="title">{title}</p>
       <div className="diversity-main">
         <div className="diversity-img">

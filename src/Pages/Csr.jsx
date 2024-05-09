@@ -6,6 +6,7 @@ import CsrReport from "../Component/CsrReport";
 import Highlights from "../Component/Highlights";
 import Diversity from "../Component/Diversity";
 import Footer from "../Component/Footer";
+import Framework from "../Component/Framework";
 
 const Csr = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -85,12 +86,14 @@ const Csr = () => {
       <CsrMain />
       <CsrReport />
       <Highlights />
+      <Framework />
       <Diversity
         title="DIVERSITY & INCLUSION"
         heading="Our work is a"
         hedingSpan="story of purpose"
         desc="Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints."
         sliderr={true}
+        background="#fff"
       />
       <Footer />
     </>
