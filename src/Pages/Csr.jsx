@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "../Component/Navbar";
 import Dropdown from "../Component/Dropdown";
+import CsrMain from "../Component/CsrMain";
+import CsrReport from "../Component/CsrReport";
+import Highlights from "../Component/Highlights";
+import Diversity from "../Component/Diversity";
+import Footer from "../Component/Footer";
 
 const Csr = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -77,7 +82,17 @@ const Csr = () => {
           }
         />
       )}
-      <h1>CSR</h1>
+      <CsrMain />
+      <CsrReport />
+      <Highlights />
+      <Diversity
+        title="DIVERSITY & INCLUSION"
+        heading="Our work is a"
+        hedingSpan="story of purpose"
+        desc="Our commitment to fostering a culture that values diversity and inclusion (D&I) considers gender and ethnicity diversity as well as diversity of backgrounds, experiences and viewpoints."
+        sliderr={true}
+      />
+      <Footer />
     </>
   );
 };
