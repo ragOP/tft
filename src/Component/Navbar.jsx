@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ toggleDropdown }) => {
   const [activeMenuItem, setActiveMenuItem] = useState(null);
-
+// console.log('');
   const handleMenuItemClick = (menuItem) => {
     toggleDropdown(menuItem);
     setActiveMenuItem(menuItem);
